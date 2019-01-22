@@ -103,7 +103,8 @@ elseif ($_REQUEST['act'] == 'add')
 elseif ($_REQUEST['act'] == 'insert')
 {
     /* 检查权限 */
-    admin_priv('users_manage');
+    admin_priv('users_manage');    
+    $nickname = empty($_POST['nickname']) ? '' : trim($_POST['nickname']);
     $username = empty($_POST['username']) ? '' : trim($_POST['username']);
     $password = empty($_POST['password']) ? '' : trim($_POST['password']);
     $email = empty($_POST['email']) ? '' : trim($_POST['email']);
@@ -183,7 +184,8 @@ elseif ($_REQUEST['act'] == 'insert')
     $other['credit_line'] = $credit_line;
     $other['user_rank']  = $rank;
     $other['sex']        = $sex;
-    $other['birthday']   = $birthday;
+    $other['birthday']   = $birthday;    
+    $other['nickname']   = $nickname;
     $other['reg_time'] = local_strtotime(local_date('Y-m-d H:i:s'));
 
     $other['msn'] = isset($_POST['extend_field1']) ? htmlspecialchars(trim($_POST['extend_field1'])) : '';
