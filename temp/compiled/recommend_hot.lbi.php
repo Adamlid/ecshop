@@ -5,27 +5,27 @@
   <div class="itemTit Hot" id="itemHot">
       <?php if ($this->_var['cat_rec'] [ 3 ]): ?>
       <h2><a href="javascript:void(0)" onclick="change_tab_style('itemHot', 'h2', this);get_cat_recommend(3, 0);"><?php echo $this->_var['lang']['all_goods']; ?></a></h2>
-      <?php $_from = $this->_var['cat_rec']['3']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'rec_data_0_11112900_1548159420');if (count($_from)):
-    foreach ($_from AS $this->_var['rec_data_0_11112900_1548159420']):
+      <?php $_from = $this->_var['cat_rec']['3']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'rec_data_0_93712000_1548301463');if (count($_from)):
+    foreach ($_from AS $this->_var['rec_data_0_93712000_1548301463']):
 ?>
-      <h2 class="h2bg"><a href="javascript:void(0)" onclick="change_tab_style('itemHot', 'h2', this);get_cat_recommend(3, <?php echo $this->_var['rec_data_0_11112900_1548159420']['cat_id']; ?>)"><?php echo $this->_var['rec_data_0_11112900_1548159420']['cat_name']; ?></a></h2>
+      <h2 class="h2bg"><a href="javascript:void(0)" onclick="change_tab_style('itemHot', 'h2', this);get_cat_recommend(3, <?php echo $this->_var['rec_data_0_93712000_1548301463']['cat_id']; ?>)"><?php echo $this->_var['rec_data_0_93712000_1548301463']['cat_name']; ?></a></h2>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       <?php endif; ?>
   </div>
   <div id="show_hot_area" class="clearfix goodsBox">
   <?php endif; ?>
-  <?php $_from = $this->_var['hot_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_11120300_1548159420');if (count($_from)):
-    foreach ($_from AS $this->_var['goods_0_11120300_1548159420']):
+  <?php $_from = $this->_var['hot_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_93718500_1548301463');if (count($_from)):
+    foreach ($_from AS $this->_var['goods_0_93718500_1548301463']):
 ?>
   <div class="goodsItem">
          <span class="hot"></span>
-           <a href="<?php echo $this->_var['goods_0_11120300_1548159420']['url']; ?>"><img src="<?php echo $this->_var['goods_0_11120300_1548159420']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_11120300_1548159420']['name']); ?>" class="goodsimg" /></a><br />
-           <p><a href="<?php echo $this->_var['goods_0_11120300_1548159420']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_11120300_1548159420']['name']); ?>"><?php echo $this->_var['goods_0_11120300_1548159420']['short_style_name']; ?></a></p>
+           <a href="<?php echo $this->_var['goods_0_93718500_1548301463']['url']; ?>"><img src="<?php echo $this->_var['goods_0_93718500_1548301463']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_93718500_1548301463']['name']); ?>" class="goodsimg" /></a><br />
+           <p><a href="<?php echo $this->_var['goods_0_93718500_1548301463']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_93718500_1548301463']['name']); ?>"><?php echo $this->_var['goods_0_93718500_1548301463']['short_style_name']; ?></a></p>
            <font class="f1">
-           <?php if ($this->_var['goods_0_11120300_1548159420']['promote_price'] != ""): ?>
-          <?php echo $this->_var['goods_0_11120300_1548159420']['promote_price']; ?>
+           <?php if ($this->_var['goods_0_93718500_1548301463']['promote_price'] != ""): ?>
+          <?php echo $this->_var['goods_0_93718500_1548301463']['promote_price']; ?>
           <?php else: ?>
-          <?php echo $this->_var['goods_0_11120300_1548159420']['shop_price']; ?>
+          <?php echo $this->_var['goods_0_93718500_1548301463']['shop_price']; ?>
           <?php endif; ?>
            </font>
         </div>

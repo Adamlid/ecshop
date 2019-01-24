@@ -121,7 +121,7 @@
     <td colspan="2" align="center">
       <input type="submit" value="<?php echo $this->_var['lang']['button_submit']; ?>" class="button" />
       <input type="reset" value="<?php echo $this->_var['lang']['button_reset']; ?>" class="button" />
-      <input type="text" name="act" value="<?php echo $this->_var['form_action']; ?>" />
+      <input type="hidden" name="act" value="<?php echo $this->_var['form_action']; ?>" />
       <input type="hidden" name="id" value="<?php echo $this->_var['user']['user_id']; ?>" />    </td>
   </tr>
 </table>
